@@ -278,6 +278,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3bffdb904e1cf624aa055c97a0ade539, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &945594358 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1272622394330440, guid: 3bffdb904e1cf624aa055c97a0ade539,
+    type: 2}
+  m_PrefabInternal: {fileID: 515869478}
+--- !u!114 &945594359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 945594358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc1db1ac949364c45a7e1a48a1ae14a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1407771408
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +397,10 @@ Prefab:
     - target: {fileID: 4060459706704930, guid: 84901a74e3e6e15448a864f839fa3996, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645478389839198, guid: 84901a74e3e6e15448a864f839fa3996, type: 2}
+      propertyPath: m_TagString
+      value: SoundCube
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84901a74e3e6e15448a864f839fa3996, type: 2}

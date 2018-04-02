@@ -13,4 +13,9 @@ public class CubeBehavior : MonoBehaviour {
 	void Update () {
 		
 	}
+    
+    public void cubeTouched()
+    {
+        Debug.Log("Touch the cube");
+    }
 }
