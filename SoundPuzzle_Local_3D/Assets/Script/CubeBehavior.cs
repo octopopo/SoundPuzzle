@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class CubeBehavior : MonoBehaviour {
     public int cubeNumber = 0;
-    public float dropSpeed;
+    public float dropSpeed = 1.0f;
     public AudioClip m_Clip;
     public Text cubeNumText;
+    public bool isMovable = true;
 	// Use this for initialization
 	void Start () {
         cubeNumText = transform.GetComponentInChildren<Text>();
@@ -15,12 +16,23 @@ public class CubeBehavior : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
-    
+	/*void Update () {
+        cubeMove();
+    }*/
+
+    private void FixedUpdate()
+    {
+        if(isMovable)
+            cubeMove();
+    }
+
     public void cubeTouched()
     {
         Debug.Log("Touch the cube" + cubeNumber);
+    }
+
+    void cubeMove()
+    {
+        transform.Translate(dropSpeed * Time.deltaTime * Vector3.back);
     }
 }
