@@ -12,6 +12,7 @@ public class CubeGenerator : MonoBehaviour {
 	void Start () {
         height = Camera.main.orthographicSize * 2;
         width = height * Camera.main.aspect;
+        m_Cube.transform.position = new Vector3(height, 0, width);
 	}
 	
 	// Update is called once per frame

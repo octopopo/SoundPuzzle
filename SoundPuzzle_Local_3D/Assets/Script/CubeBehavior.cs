@@ -26,13 +26,14 @@ public class CubeBehavior : MonoBehaviour {
             cubeMove();
     }
 
-    public void cubeTouched()
-    {
-        Debug.Log("Touch the cube" + cubeNumber);
-    }
-
     void cubeMove()
     {
         transform.Translate(dropSpeed * Time.deltaTime * Vector3.back);
+    }
+
+
+    public void cubeTouched()
+    {
+        Debug.Log("Touch the cube" + cubeNumber);
     }
 }
